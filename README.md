@@ -9,7 +9,7 @@
 - for starting the server use this command "npm start"
 
 # open browser
-- go to browser enter [loc](http://localhost:3000/) here you will be able to see how it works.
+- go to browser enter [http://localhost:3000](http://localhost:3000/) here you will be able to see how it works.
 
 # image
 ![alt text](image.png)
