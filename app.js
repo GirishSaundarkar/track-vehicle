@@ -14,23 +14,15 @@ app.use("/api", apiRoutes);
 
 io.on("connection", (socket) => {
     console.log("Client connected:", socket.id);
-
-    const interval = setInterval(() => {
-        socket.emit("vehicle-location", { id: socket.id });
-    }, 2000);
-
     socket.on("disconnect", () => {
-        clearInterval(interval);
         console.log("Client disconnected:", socket.id);
     });
 });
 
-// Render the frontend
 app.get("/", (req, res) => {
     res.render("index");
 });
 
-// Start server
 const PORT = 3000;
 server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);

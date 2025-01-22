@@ -1,5 +1,4 @@
 const map = L.map("map").setView([18.483725, 73.815036], 15);
-console.log('map: ', map);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "OpenStreetMap",
 }).addTo(map);
